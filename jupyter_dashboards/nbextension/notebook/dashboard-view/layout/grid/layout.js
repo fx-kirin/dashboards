@@ -53,8 +53,8 @@ define([
         // read configurable values from dashboard metadata
         var viewProps = Metadata.viewProperties;
         this.gridMargin = viewProps.cellMargin >= 0 ? viewProps.cellMargin : 10;
-        this.numCols = viewProps.maxColumns >= 0 ? viewProps.maxColumns : 12;
-        this.rowHeight = viewProps.defaultCellHeight >= 0 ? viewProps.defaultCellHeight : 20;
+        this.numCols = viewProps.maxColumns >= 0 ? viewProps.maxColumns : 24;
+        this.rowHeight = viewProps.defaultCellHeight >= 0 ? viewProps.defaultCellHeight : 10;
 
         Metadata.initialize();
         Metadata.setDefaultGridProperties({
